@@ -1,10 +1,14 @@
-export const Statistics = ({title, stats }) => { 
+import PropTypes from "prop-types";
+ 
+export const Statistics = ({ title, stats }) => { 
+
+            
     return (
                 <section class="statistics">
             {title &&<h2 class="title">Upload stats</h2>}
 
                     <ul class="stat-list">
-                        <li class="item">
+                <li class="item">
                             <span class="label">.docx</span>
                             <span class="percentage">{stats[0].percentage}%</span>
                         </li>
@@ -25,3 +29,11 @@ export const Statistics = ({title, stats }) => {
         
     )
 }
+
+Statistics.propTypes = {
+    title: PropTypes.string.isRequired,
+  stats: PropTypes.array.isRequired,
+
+}
+
+

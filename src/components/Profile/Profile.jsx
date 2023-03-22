@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 export const Profile = (props) => { 
     return (
  <div class="profile">
@@ -28,4 +29,8 @@ export const Profile = (props) => {
   </ul>
         </div>
     )
+}
+
+Profile.propTypes = {
+    props: PropTypes.array.isRequired,
 }
