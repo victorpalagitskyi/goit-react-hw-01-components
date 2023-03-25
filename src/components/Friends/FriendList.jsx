@@ -3,7 +3,9 @@ import "./Friends.css"
 export const FriendList = ({ friends }) => { 
     return (
         <ul className="friend-list">
-            <FriendListItem friends={friends}/>
+            {friends.map((friend) => (
+                <FriendListItem friend={friend} />))
+            }
         </ul>
            )
         }

@@ -6,15 +6,15 @@ export const Statistics = ({ title, stats }) => {
                 <section className="statistics">
             {title && <h2 className="title">{title}</h2>}
                     <ul className="stat-list">
-                <li class="item">
+                <li className="item">
                     <span className="label">{stats[0].label}</span>
                             <span className="percentage">{stats[0].percentage}%</span>
                         </li>
-                        <li class="item">
+                        <li className="item">
                             <span className="label">{stats[1].label}</span>
                             <span className="percentage">{stats[1].percentage}%</span>
                         </li>
-                        <li class="item">
+                        <li className="item">
                             <span className="label">{stats[2].label}</span>
                             <span className="perceMclassNamentage">{stats[2].percentage}%</span>
                         </li>
