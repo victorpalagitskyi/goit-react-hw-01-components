@@ -4,7 +4,7 @@ export const Statistics = ({ title, stats }) => {
 
     return (
                 <section className="statistics">
-            {title && <h2 class="title">{title}</h2>}
+            {title && <h2 className="title">{title}</h2>}
                     <ul className="stat-list">
                 <li class="item">
                     <span className="label">{stats[0].label}</span>
@@ -29,7 +29,7 @@ export const Statistics = ({ title, stats }) => {
 }
 
 Statistics.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
   stats: PropTypes.array.isRequired,
 
 }
